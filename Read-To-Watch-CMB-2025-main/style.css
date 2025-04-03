@@ -30,14 +30,17 @@ body, html {
     object-fit:contain
 }
 
+
 /* Image Reveal */
-.images {
+.images-container {
     display: flex;
     justify-content: center;
     gap: 20px;
     padding: 50px 0;
-    margin-bottom: -50px;
 }
+
+
+
 
 .comics-info{
   font-size: 10px;
@@ -58,16 +61,23 @@ body, html {
 .comics-f4{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     padding: 50px 0;
 
 }
 
 .comics-f4 img {
     width: 300px;
-    height: auto;
+    height: 400px;
     border-radius: 20px;
     margin-top: 100px;
+    box-shadow: 0 0 25px rgba(0, 204, 255, 0.6);
+}
+
+.comics-f4 img:hover{
+    transition: transform 0.8s, box-shadow 5.4s ease;
+    transform: scale(1.1)
+
 }
 
 /* Comics to read FF */
