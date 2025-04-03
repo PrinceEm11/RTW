@@ -291,6 +291,42 @@ body, html {
     border: 5px solid #ffcc00; /* Superman yellow */
 }
 
+/*  Iron Heart */
+
+#iron-heart {
+    margin-top: 1400px; /* Adds spacing below Superman Comics */
+    text-align: center;
+    color: white;
+}
+
+.iron-images{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+
+.iron-item img {
+    width: 200px; 
+    height: 300px;
+    object-fit: cover; 
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(252, 214, 2, 0.6);
+}
+
+
+/* Iron Heart imgs */
+
+.iron-item img {
+    width: 200px; 
+    height: 300px;
+    object-fit: cover; 
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(252, 214, 2, 0.6);
+    
+}
+
 
 .super-info {
     margin-top: 10px;
