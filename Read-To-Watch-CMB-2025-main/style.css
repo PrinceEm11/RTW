@@ -1,3 +1,46 @@
+@font-face {
+    font-family: born_again;
+    src: url(../fonts/dd_ba.ttf)
+  }
+
+  @font-face {
+    font-family: fantastic_four;
+    src: url(../fonts/fantastic4.ttf)
+  }
+
+
+  @font-face {
+    font-family: thunderbolts;
+    src: url(../fonts/thunder.ttf)
+  }
+
+  @font-face {
+    font-family: superman;
+    src: url(../fonts/superman.ttf)
+  }
+
+  @font-face {
+    font-family: superman2;
+    src: url(../fonts/supes.ttf)
+  }
+
+
+  @font-face {
+    font-family: iron_heart;
+    src: url(../fonts/iron_heart.otf)
+  }
+
+  
+  @font-face {
+    font-family: tb_2;
+    src: url(../fonts/arial_tb.ttf)
+  }
+
+
+
+
+
+
 /* General Reset */
 body, html {
     margin: 0;
@@ -6,6 +49,7 @@ body, html {
     text-align: center;
     color: white;
     background-color: black;
+    
 }
 
 /* Intro Section */
@@ -54,7 +98,8 @@ body, html {
 }
 
 .comics-info{
-  font-size: 10px;
+  font-size: 20px;
+  font-family:  fantastic_four;
 }
 
 .comic-item {
@@ -62,12 +107,19 @@ body, html {
 }
 
 .titel-f4{
+    font-family: fantastic_four;
     margin-top: -90px;
     font-size: 30px;
 }
 
 
 /* Comics to read FF */
+
+.ctr-f4{
+    font-family: fantastic_four;
+    letter-spacing: 2px;
+
+}
 
 .comics-f4{
     display: flex;
@@ -91,6 +143,15 @@ body, html {
 
 }
 
+
+.comics-info-f4{
+    font-family: fantastic_four;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+
+
 /* Comics to read FF */
 
 
@@ -113,6 +174,8 @@ body, html {
 
 .ctr{
     margin-top: 200px;
+    font-family: born_again;
+    font-size: 30px;
 }
 
 /* Daredevil Section */
@@ -178,6 +241,11 @@ body, html {
 }
 
 
+.comics-info-dd{
+    font-family: born_again;
+
+}
+
 /* Thunderbolts Intro */
 
 .thunderbolts-images{
@@ -197,6 +265,13 @@ body, html {
 }
 
 
+.thb{
+    font-family: tb_2;
+    letter-spacing: 5px;
+
+
+}
+
 /* Thunderbolts imgs */
 
 .thunderb-item img {
@@ -209,7 +284,7 @@ body, html {
 }
 
 
-.comics-tb{
+.comics-tb {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -222,6 +297,17 @@ body, html {
     text-align: center;
 }
 
+.thunderb-info {
+    font-family: thunderbolts;
+    letter-spacing: 2px;
+
+
+}
+
+.ctr-tb{
+    font-family: thunderbolts;
+    font-size: 30px;
+}
 
 
 /* Superman Section Layout */
@@ -244,9 +330,11 @@ body, html {
 
 /* Text Styling */
 .superman-text {
+    font-family: superman2;
     color: white;
     max-width: 400px;
     text-align: left;
+    letter-spacing: 6px;
 }
 
 .superman-text h1 {
@@ -261,6 +349,11 @@ body, html {
     text-align: center;
 }
 
+.ctr-supe{
+    font-family: superman2;
+    font-size: 30px;
+}
+
 
 .comics-sm{
     display: flex;
@@ -273,6 +366,13 @@ body, html {
 .super-item {
     position: absolute;
     transition: transform 0.5s ease;
+}
+
+
+.super-info{
+    font-family: superman2;
+    letter-spacing: 6px;
+    font-size: 20px;
 }
 
 
@@ -295,11 +395,11 @@ body, html {
 /* Comic Cover Styling */
 .super-item img {
     width: 250px;
-    height: 350px;
+    height: 380px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 0 20px rgba(0, 0, 255, 0.7); /* Superman blue */
-    border: 5px solid #ffcc00; /* Superman yellow */
+    border: 1px solid #ffcc00; /* Superman yellow */
 }
 
 /*  Iron Heart */
@@ -308,6 +408,13 @@ body, html {
     margin-top: 1400px; /* Adds spacing below Superman Comics */
     text-align: center;
     color: white;
+}
+
+
+.iron{
+    font-family: iron_heart;
+    font-size: 50px;
+    letter-spacing: 8px;
 }
 
 .iron-images{
@@ -348,7 +455,10 @@ body, html {
     text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.8);
 }
 
-
+.ctr-ih{
+    font-family: iron_heart;
+    font-size: 30px;
+}
 
 
 
