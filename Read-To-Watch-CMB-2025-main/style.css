@@ -46,7 +46,25 @@
     src: url(../fonts/first_steps.otf)
   }
 
+  @font-face {
+    font-family: text1;
+    src: url(../fonts/agencyfb_bold.ttf)
+  }
 
+  @font-face {
+    font-family: blackwidow;
+    src: url(../fonts/blackwidow.ttf)
+  }
+
+  @font-face {
+    font-family: captain;
+    src: url(../fonts/captain.ttf)
+  }
+
+  @font-face {
+    font-family: smallville;
+    src: url(../fonts/smallville.ttf)
+  }
 
 
 
@@ -105,7 +123,6 @@ body, html {
     padding: 40px 20px;
     text-align: center;
     letter-spacing: 1px;
-    border: 5px solid #e62429;
     border-radius: 15px;
     box-shadow: 0 0 20px #e62429;
     max-width: 900px;
@@ -131,13 +148,13 @@ body, html {
 }
 
 .highlight-thunderbolts {
-    color: #ffeb3b;
+    color: #be720e;
     font-family: thunderbolts;
     
 }
 
 .highlight-ironheart {
-    color: #946500;
+    color: #b3b3b3;
     font-family: iron_heart;
     font-size: 40px;
 }
@@ -253,9 +270,10 @@ body, html {
     font-size: 0.95rem;
     transform: translateY(100%);
     transition: transform 0.4s ease;
-    font-family: 'Arial', sans-serif;
+    font-family: texts;
     line-height: 1.4;
     z-index: 10;
+    font-size: 20px;
 }
 
 /* Show on hover */
@@ -290,11 +308,7 @@ body, html {
     margin-top: 600px;
 }
 
-#background-video {
-    width: 100%;
-    height: 100%;
-    object-fit:contain
-}
+
 
 
 .images-container {
@@ -312,8 +326,8 @@ body, html {
 }
 
 .images-f4 img {
-    width: 400px;
-    height: 600px;
+    width: 600px;
+    height: 800px;
     object-fit: cover;
     border-radius: 8px;
     transition: opacity 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
@@ -327,18 +341,6 @@ body, html {
 }
 
 
-.hover-text {
-    position: absolute;
-    bottom: 75%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-    background: rgba(102, 102, 102, 0.8); 
-    padding: 10px 20px;
-    border-radius: 8px;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
 
 /* Show the text when hovering */
 .images-f4:hover .hover-text {
@@ -367,20 +369,38 @@ body, html {
 
 .titel-f4{
     font-family: first_steps;
-    background-color: #0d0d0d;
     color: #f5f5f5;
     padding: 40px 20px;
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
-    border-top: 4px solid #00bcd4;
-    border-bottom: 4px solid #00bcd4;
     font-size: 50px;
+    color: #79beec;
         
 }
 
 
 .hover-text{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 15px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center;
+    font-size: 20px;
+    width: 80%;
+    max-height: 60%;
+    overflow-y: auto;
+    font-family: texts;
+
+}
+
+.hover-text-0{
     position: absolute;
     bottom: 25%;
     left: 50%;
@@ -392,29 +412,11 @@ body, html {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     text-align: center;
-    font-size: 14px;
+    font-size: 20px;
     width: 80%;
     max-height: 60%;
     overflow-y: auto;
-
-}
-
-.hover-text-0{
-    position: absolute;
-    bottom: 34%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color:#fff;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px 15px;
-    border-radius: 8px;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    text-align: center;
-    font-size: 14px;
-    width: 80%;
-    max-height: 60%;
-    overflow-y: auto;
+    font-family: texts;
 
 }
 
@@ -431,7 +433,7 @@ body, html {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     text-align: center;
-    font-size: 14px;
+    font-size: 20px;
     width: 80%;
     max-height: 70%;
     overflow-y: auto;
@@ -472,10 +474,10 @@ body, html {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
-    border-top: 4px solid #00bcd4;
-    border-bottom: 4px solid #00bcd4;
-    font-family: first_steps;
+    font-family: texts;
     margin-top: 200px;
+    box-shadow: 0 0 25px rgba(7, 175, 218, 0.6);
+    border-radius: 10px;
 }
 
 .titel-f4{
@@ -536,9 +538,10 @@ body, html {
 /* Comics to read FF */
 
 .ctr-f4{
-    font-family: fantastic_four;
     letter-spacing: 4px;
     margin-top: 150px;
+    font-family: first_steps;
+    font-size: 50px;
 
 }
 
@@ -551,7 +554,7 @@ body, html {
 }
 
 .comics-f4 img {
-    width: 350px;
+    width: 500px;
     height: auto;
     border-radius: 20px;
     margin-top: 100px;
@@ -604,11 +607,12 @@ body, html {
 }
 
 .ctr{
-    margin-top: 200px;
+    margin-top: 700px;
     font-family: born_again;
     font-size: 30px;
     letter-spacing: 1px;
     font-size: 60px;
+    color: rgb(161, 7, 7);
 }
 
 /* Daredevil Section */
@@ -623,10 +627,51 @@ body, html {
 
 #born_again {
     position: relative;
-    height: 100vh;
-    margin-top: 50px;
+    margin-top: -20px;
 }
 
+
+.dd-description {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #e0e0e0;
+    background-color: rgba(20, 20, 20, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+    margin: auto;
+    font-family: texts;
+
+    
+}
+
+.dd-description .matt {
+    color: #f44336;
+    font-weight: bold;
+    font-family: born_again;
+    font-size: 30px;
+}
+
+.dd-description .hero {
+    color: #b71c1c;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.dd-description .kingpin,
+.dd-description .villain {
+    color: #9c27b0;
+    font-weight: bold;
+    font-family: born_again;
+    font-size: 30px;
+}
+
+.dd-description .location {
+    color: #ff9800;
+    font-style: italic;
+}
 
 
 
@@ -669,7 +714,7 @@ body, html {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     text-align: center;
-    font-size: 14px;
+    font-size: 20px;
     width: 80%;
     max-height: 70%;
     overflow-y: auto;
@@ -685,8 +730,8 @@ body, html {
 
 /* Image Styling */
 .daredevil-item img {
-    width: 350px; 
-    height: 520px;
+    width: 380px; 
+    height: 650px;
     object-fit: cover; 
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
@@ -713,7 +758,7 @@ body, html {
 
 .fm-bornagain img {
     width: 400px; 
-    height: 590px;
+    height: 620px;
     object-fit: cover; 
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
@@ -759,7 +804,7 @@ body, html {
     opacity: 0;
     transition: opacity 0.6s ease, transform 0.6s ease;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     width: 80%;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
@@ -831,10 +876,68 @@ body, html {
     font-family: tb_2;
     letter-spacing: 5px;
     margin-top: 500px;
-    font-size: 30px;
+    font-size: 40px;
 
 }
 
+
+
+.tb-description {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #e0e0e0;
+    background-color: rgba(15, 15, 15, 0.85);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(252, 214, 2, 0.6);
+    font-family: texts;
+}
+
+/* TB cast */
+.tb-description .team {
+    color: #ad7814;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: thunderbolts;
+    letter-spacing: 2px;
+}
+
+.tb-description .leader {
+    color: #d4af37;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.tb-description .bucky {
+    color: #adadad;
+    font-weight: bold;
+    font-family: text1;
+    font-size: 30px;
+}
+
+.tb-description .yelena {
+    color: #ffffff;
+    font-weight: bold;
+    font-family: blackwidow;
+    font-size: 30px;
+}
+
+.tb-description .usagent {
+    color: #001e81;
+    font-weight: bold;
+    font-family: captain;
+    font-size: 30px;
+}
+
+.tb-description .taskmaster {
+    color: #1535c4;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: text1;
+}
 
 
 
@@ -900,6 +1003,76 @@ body, html {
     margin-top: 550px;
 }
 
+
+#superman-jg {
+    position: relative;
+    height: 100vh;
+    margin-top: 50px;
+}
+
+
+.superman-description {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #f5f5f5;
+    background-color: rgba(24, 24, 24, 0.85);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgb(29, 152, 235);
+    max-width: 900px;
+    margin: auto;
+    font-family: texts;
+
+}
+
+
+#superman-info{
+    margin-top: 20px;
+
+}
+
+
+
+/* TEXT EDIT */
+.superman-description .hero-name {
+    color: #1976d2;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: smallville;
+    font-size: 40px;
+}
+
+.superman-description .clark {
+    color: #64b5f6;
+    font-weight: bold;
+    font-family: smallville;
+    font-size: 40px;
+}
+
+.superman-description .krypton {
+    color: #e91e63;
+    font-style: italic;
+    font-family: smallville;
+    font-size: 40px;
+}
+
+.superman-description .family {
+    color: #ffb300;
+    font-weight: bold;
+    font-family: smallville;
+    font-size: 40px;
+}
+
+.superman-description .villain {
+    color: #d32f2f;
+    font-weight: bold;
+    font-family: smallville;
+    font-size: 40px;
+}
+
+
+
+
 /* Image Styling */
 .superman-images img {
     width: 450px; /* Adjust size */
@@ -929,7 +1102,7 @@ body, html {
     opacity: 0;
     transition: opacity 0.6s ease, transform 0.6s ease;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     width: 80%;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
@@ -966,7 +1139,7 @@ body, html {
 
 .ctr-supe{
     font-family: superman2;
-    font-size: 50px;
+    font-size: 70px;
     margin-top: 300px;
     margin-bottom: 400px;
 }
@@ -1044,10 +1217,51 @@ body, html {
     margin-top: 50px;
 }
 
+.ctr-ih{
+    font-size: 60px;
+    font-family: iron_heart;
+}
+
+
+.ironheart-description {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #f0f0f0;
+    background-color: rgba(17, 17, 17, 0.85);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgb(192, 150, 12);
+    max-width: 900px;
+    margin: auto;
+    font-family: texts;
+    margin-top: 30px;
+}
+
+/* Highlighted terms */
+.hero-name {
+    color: #e53935;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+ .riri {
+    color: #ff7043;
+    font-weight: bold;
+}
+
+.ally {
+    color: #00bcd4;
+    font-weight: bold;
+}
+
+.nation {
+    color: #4db6ac;
+    font-style: italic;
+}
 
 .iron{
     font-family: iron_heart;
-    font-size: 50px;
+    font-size: 70px;
     letter-spacing: 8px;
 }
 
@@ -1089,7 +1303,7 @@ body, html {
 
 
 .ih-item img{
-    width: 300px;
+    width: 400px;
     height: auto;
     object-fit: cover;
     border-radius: 12px;
@@ -1123,7 +1337,7 @@ body, html {
     opacity: 0;
     transition: opacity 0.6s ease, transform 0.6s ease;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     width: 80%;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
@@ -1173,10 +1387,97 @@ body, html {
     text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.8);
 }
 
-.ctr-ih{
+.ctr-t3{
     font-family: iron_heart;
     font-size: 60px;
+    margin-top: 600px;
 }
+
+
+.comics-t3 {
+    display: flex;              
+    justify-content: space-between; 
+    flex-wrap: wrap;       
+}
+
+/* Each item (comic card) */
+.t3-item {
+    position: relative;
+    width: 30%;                  
+    margin-bottom: 20px;         
+    margin-top: 70px;
+}
+
+/* Image styling */
+.t3-item img {
+    width: 400px;                
+    height: auto;               
+    transition: transform 0.3s;
+    border-radius: 10px;
+}
+
+/* Zoom effect when hovering over the image */
+.t3-item:hover img {
+    transform: scale(1.1);      
+}
+
+/* Text inside the hover-text box */
+.hover-text-7 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    text-align: center;
+    font-size: 20px;
+    width:50%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);                /* Ensure the text is above the image */
+}
+
+
+.t3-item:hover .hover-text-7 {
+    opacity: 1; 
+}
+
+
+.t3-info {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: texts;
+}
+
+
+h1.ctr-t3 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
