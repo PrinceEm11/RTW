@@ -11,7 +11,7 @@
 
   @font-face {
     font-family: thunderbolts;
-    src: url(../fonts/thunder.ttf)
+    src: url(../fonts/avengers.ttf)
   }
 
   @font-face {
@@ -34,6 +34,16 @@
   @font-face {
     font-family: tb_2;
     src: url(../fonts/arial_tb.ttf)
+  }
+
+  @font-face {
+    font-family: texts;
+    src: url(../fonts/OpenSans-CondBold.ttf)
+  }
+
+  @font-face {
+    font-family: first_steps;
+    src: url(../fonts/first_steps.otf)
   }
 
 
@@ -62,10 +72,222 @@ body, html {
     background: black;
 }
 
+#intro h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    text-align: center;
+    background: linear-gradient(90deg, #ff004f, #00ffd5, #f9ff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: flicker 2s infinite alternate;
+}
+
+
+@keyframes flicker {
+    0% {
+        opacity: 1;
+        text-shadow: 0 0 10px #ffffff, 0 0 20px #04ad89, 0 0 30px #f9ff00;
+    }
+    100% {
+        opacity: 0.85;
+        text-shadow: 0 0 5px #fcfcfc, 0 0 15px #8a048f, 0 0 25px #f9ff00;
+    }
+}
+
+
+
+/* Intro Text Styles */
+#intro-text {
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    padding: 40px 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    border: 5px solid #e62429;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #e62429;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+#intro-text p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family: texts;
+}
+
+.intro-year {
+    color: #d3ad03;
+    font-size: 2rem;
+
+}
+
+.highlight-ff {
+    color: #1f8ab4;
+    font-family: first_steps;
+    font-size: 30px;
+}
+
+.highlight-thunderbolts {
+    color: #ffeb3b;
+    font-family: thunderbolts;
+    
+}
+
+.highlight-ironheart {
+    color: #946500;
+    font-family: iron_heart;
+    font-size: 40px;
+}
+
+.highlight-superman {
+    color: #2196f3;
+    font-family: superman2;
+    font-size: 30px;
+}
+
+.highlight-daredevil {
+    color: #b11e23;
+    font-family: born_again;
+    font-size: 40px;
+}
+
+
+.comic-photo-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* cc Section */
+.images-container1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 120px;
+}
+
+.images-dw {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 200px;
+}
+
+.images-sm {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 280px;
+}
+
+
+.images-cc {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 200px;
+}
+
+/* img hover Section */
+.images-dw img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.6s;
+}
+
+.images-sm img {
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.6s;
+}
+
+
+
+.images-cc img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.6s;
+}
+
+
+
+
+/* Hover container setup */
+.images-container1 > div {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+/* Image styling */
+.images-container1 img {
+    width: 100%;
+    display: block;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for zoom */
+.images-container1 > div:hover img {
+    transform: scale(1.05);
+}
+
+/* Hover text styling */
+.hover-text6,
+.hover-text-6 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 1rem;
+    font-size: 0.95rem;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.4;
+    z-index: 10;
+}
+
+/* Show on hover */
+.images-container1 > div:hover .hover-text6,
+.images-container1 > div:hover .hover-text-6 {
+    transform: translateY(0);
+}
+
+
+
+
+
+.images-dw:hover img {
+     transform: scale(1.1);
+}
+
+.images-sm:hover img {
+    transform: scale(1.1);
+}
+
+.images-cc:hover img {
+    transform: scale(1.1);
+}
+
+
+
+
 /* Fantastic Four Video Section */
 #fantastic-four {
     position: relative;
     height: 100vh;
+    margin-top: 600px;
 }
 
 #background-video {
@@ -144,10 +366,17 @@ body, html {
 }
 
 .titel-f4{
-    font-family: fantastic_four;
-    margin-top: 100px;
+    font-family: first_steps;
+    background-color: #0d0d0d;
+    color: #f5f5f5;
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border-top: 4px solid #00bcd4;
+    border-bottom: 4px solid #00bcd4;
     font-size: 50px;
-    letter-spacing: 2px;
+        
 }
 
 
@@ -232,6 +461,76 @@ body, html {
 .images-f4:hover .hover-text-0 {
     opacity: 1;
 }
+
+
+/* Into text under Trailer */
+
+#fantastic-four-info {
+    background-color: #0d0d0d;
+    color: #f5f5f5;
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border-top: 4px solid #00bcd4;
+    border-bottom: 4px solid #00bcd4;
+    font-family: first_steps;
+    margin-top: 200px;
+}
+
+.titel-f4{
+    margin-top: 40px;
+
+}
+
+.ff-description p {
+    font-size: 25px;
+    line-height: 1.8rem;
+}
+
+#fantastic-four-info strong {
+    color: #00bcd4;
+}
+
+#fantastic-four-info em {
+    color: #bcf4fc;
+}
+
+
+
+.reed {
+    color: #2196f3; /* Smart blue */
+    font-weight: bold;
+}
+
+.sue {
+    color: #9e9e9e; /* Subtle silver/gray for invisibility */
+    font-weight: bold;
+}
+
+.johnny {
+    color: #ff5722; /* Flame orange */
+    font-weight: bold;
+}
+
+.ben {
+    color: #795548; /* Rocky brown */
+    font-weight: bold;
+}
+
+
+
+.villain-galactus {
+    color: #9c27b0;
+    font-weight: bold;
+}
+
+.villain-doom {
+    color: #4caf50; 
+    font-weight: bold;
+}
+
+
 
 
 /* Comics to read FF */
@@ -319,6 +618,18 @@ body, html {
     background-color: black;
     color: white;
 }
+
+
+
+#born_again {
+    position: relative;
+    height: 100vh;
+    margin-top: 50px;
+}
+
+
+
+
 
 /* Scroll Animation Container */
 .diagonal-scroll {
@@ -489,6 +800,14 @@ body, html {
     justify-content: center;
     gap: 30px;
     margin-top: 30px;
+}
+
+
+
+#thunder {
+    position: relative;
+    height: 100vh;
+    margin-top: 50px;
 }
 
 
@@ -714,9 +1033,15 @@ body, html {
 /*  Iron Heart */
 
 #iron-heart {
-    margin-top: 1400px; /* Adds spacing below Superman Comics */
+    margin-top: 1800px; /* Adds spacing below Superman Comics */
     text-align: center;
     color: white;
+}
+
+#ironheart {
+    position: relative;
+    height: 100vh;
+    margin-top: 50px;
 }
 
 
